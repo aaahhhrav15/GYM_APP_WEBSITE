@@ -1,0 +1,613 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FitMe - Track Your Fitness Journey">
+	<main>
+		<!-- Hero Section -->
+		<section class="hero" id="home">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1>Track Your Fitness Journey with <span class="gradient-text">FitMe</span></h1>
+						<p class="hero-description">
+							The ultimate fitness companion that helps you stay consistent, track progress, and achieve your fitness goals through smart QR code attendance tracking.
+						</p>
+						<div class="cta-buttons">
+							<a href="#" class="btn btn-primary">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" fill="currentColor"/>
+								</svg>
+								Download for iOS
+							</a>
+							<a href="/app-release.apk" class="btn btn-secondary" download>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.5 12l2.198-2.491zM5.864 2.658L16.802 8.99 14.5 11.293 5.864 2.658z" fill="currentColor"/>
+								</svg>
+								Download APK
+							</a>
+						</div>
+					</div>
+					<div class="hero-image">
+						<div class="app-mockup">
+							<img src="/image.png" alt="FitMe App Logo" class="app-logo" />
+							<div class="mockup-glow"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="features" id="features">
+			<div class="container">
+				<div class="section-header">
+					<h2>Why Choose FitMe?</h2>
+					<p>Everything you need to stay consistent and track your fitness progress</p>
+				</div>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+								<path d="M9.5 2A1.5 1.5 0 008 3.5v1A1.5 1.5 0 009.5 6h5A1.5 1.5 0 0016 4.5v-1A1.5 1.5 0 0014.5 2h-5zM12 7a8 8 0 100 16 8 8 0 000-16zm0 3a1 1 0 011 1v3l2 2a1 1 0 01-1.414 1.414L11 15.414V11a1 1 0 011-1z" fill="currentColor"/>
+							</svg>
+						</div>
+						<h3>QR Code Attendance</h3>
+						<p>Quick and secure gym check-ins using QR code scanning technology</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+								<path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2m4-2v4H8V2h8zM8 14h8m-8 4h5" stroke="currentColor" stroke-width="2" fill="none"/>
+							</svg>
+						</div>
+						<h3>Progress Tracking</h3>
+						<p>Monitor your workout sessions, fitness goals, and achievements over time</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+								<path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" fill="currentColor"/>
+							</svg>
+						</div>
+						<h3>Secure & Private</h3>
+						<p>Your data is protected with enterprise-grade security and privacy measures</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+							</svg>
+						</div>
+						<h3>Membership Management</h3>
+						<p>Keep track of your gym membership status and payment history</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+								<path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29l-1.43-1.43z" fill="currentColor"/>
+							</svg>
+						</div>
+						<h3>Workout Plans</h3>
+						<p>Access personalized workout and nutrition plans tailored to your goals</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+								<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+							</svg>
+						</div>
+						<h3>Achievement System</h3>
+						<p>Stay motivated with streaks, badges, and milestone celebrations</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works Section -->
+		<section class="how-it-works" id="how-it-works">
+			<div class="container">
+				<div class="section-header">
+					<h2>How It Works</h2>
+					<p>Get started in just three simple steps</p>
+				</div>
+				<div class="steps-grid">
+					<div class="step">
+						<div class="step-number">1</div>
+						<h3>Download & Register</h3>
+						<p>Download the app and create your account with your gym code</p>
+					</div>
+					<div class="step">
+						<div class="step-number">2</div>
+						<h3>Scan QR Code</h3>
+						<p>Simply scan the QR code at your gym to mark your attendance</p>
+					</div>
+					<div class="step">
+						<div class="step-number">3</div>
+						<h3>Track Progress</h3>
+						<p>Monitor your fitness journey and achieve your goals</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="cta-section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Ready to Transform Your Fitness Journey?</h2>
+					<p>Join thousands of users who are already tracking their progress with FitMe</p>
+					<div class="cta-buttons">
+						<a href="/app-release.apk" class="btn btn-primary" download>Download Now</a>
+						<a href="/privacy" class="btn btn-outline">Privacy Policy</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<img src="/image.png" alt="FitMe" class="footer-logo" />
+					<p>Track your fitness journey with confidence</p>
+				</div>
+				<div class="footer-links">
+					<div class="footer-column">
+						<h4>Legal</h4>
+						<ul>
+							<li><a href="/privacy">Privacy Policy</a></li>
+							<li><a href="/terms">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h4>Support</h4>
+						<ul>
+							<li><a href="mailto:official@meeraaitech.com">Contact Us</a></li>
+							<li><a href="#">Help Center</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 FitMe. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</Layout>
+
+<style>
+	/* Global Styles */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		line-height: 1.6;
+		color: #1a1a1a;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	.gradient-text {
+		background: linear-gradient(135deg, #c3f53c 0%, #a8e6cf 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	/* Buttons */
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		padding: 16px 32px;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 16px;
+		transition: all 0.3s ease;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: linear-gradient(135deg, #c3f53c 0%, #a8e6cf 100%);
+		color: #1a1a1a;
+		box-shadow: 0 4px 20px rgba(195, 245, 60, 0.3);
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 30px rgba(195, 245, 60, 0.4);
+	}
+
+	.btn-secondary {
+		background: #1a1a1a;
+		color: white;
+		box-shadow: 0 4px 20px rgba(26, 26, 26, 0.2);
+	}
+
+	.btn-secondary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 30px rgba(26, 26, 26, 0.3);
+	}
+
+	.btn-outline {
+		background: transparent;
+		color: #1a1a1a;
+		border-color: #e5e5e5;
+	}
+
+	.btn-outline:hover {
+		background: #f8f8f8;
+		transform: translateY(-2px);
+	}
+
+	/* Special styling for outline button in dark sections */
+	.cta-section .btn-outline {
+		background: rgba(255, 255, 255, 0.1);
+		color: white;
+		border-color: rgba(255, 255, 255, 0.3);
+		backdrop-filter: blur(10px);
+	}
+
+	.cta-section .btn-outline:hover {
+		background: rgba(255, 255, 255, 0.2);
+		color: white;
+		border-color: rgba(255, 255, 255, 0.5);
+		transform: translateY(-2px);
+	}
+
+	/* Hero Section */
+	.hero {
+		padding: 120px 0 80px;
+		background: linear-gradient(135deg, #f8fffe 0%, #f0fff4 100%);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: radial-gradient(circle at 30% 20%, rgba(195, 245, 60, 0.1) 0%, transparent 50%);
+		pointer-events: none;
+	}
+
+	.hero-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+	}
+
+	.hero h1 {
+		font-size: 3.5rem;
+		font-weight: 800;
+		line-height: 1.2;
+		margin-bottom: 24px;
+	}
+
+	.hero-description {
+		font-size: 1.25rem;
+		color: #666;
+		margin-bottom: 40px;
+		line-height: 1.6;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	.hero-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.app-mockup {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.app-logo {
+		width: 200px;
+		height: 200px;
+		border-radius: 44px;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+		position: relative;
+		z-index: 2;
+	}
+
+	.mockup-glow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 250px;
+		height: 250px;
+		background: radial-gradient(circle, rgba(195, 245, 60, 0.3) 0%, transparent 70%);
+		border-radius: 50%;
+		animation: pulse 3s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+		50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.4; }
+	}
+
+	/* Section Headers */
+	.section-header {
+		text-align: center;
+		margin-bottom: 80px;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 16px;
+		color: #1a1a1a;
+	}
+
+	.section-header p {
+		font-size: 1.25rem;
+		color: #666;
+	}
+
+	/* Features Section */
+	.features {
+		padding: 120px 0;
+		background: white;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 40px;
+	}
+
+	.feature-card {
+		padding: 40px;
+		background: #fafafa;
+		border-radius: 20px;
+		text-align: center;
+		transition: all 0.3s ease;
+		border: 1px solid #f0f0f0;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+		background: white;
+	}
+
+	.feature-icon {
+		width: 80px;
+		height: 80px;
+		background: linear-gradient(135deg, #c3f53c 0%, #a8e6cf 100%);
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 24px;
+		color: #1a1a1a;
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 16px;
+		color: #1a1a1a;
+	}
+
+	.feature-card p {
+		color: #666;
+		line-height: 1.6;
+	}
+
+	/* How It Works Section */
+	.how-it-works {
+		padding: 120px 0;
+		background: linear-gradient(135deg, #f8fffe 0%, #f0fff4 100%);
+	}
+
+	.steps-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 60px;
+	}
+
+	.step {
+		text-align: center;
+		position: relative;
+	}
+
+	.step-number {
+		width: 80px;
+		height: 80px;
+		background: linear-gradient(135deg, #c3f53c 0%, #a8e6cf 100%);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		font-weight: 700;
+		color: #1a1a1a;
+		margin: 0 auto 24px;
+	}
+
+	.step h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 16px;
+		color: #1a1a1a;
+	}
+
+	.step p {
+		color: #666;
+		line-height: 1.6;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		padding: 120px 0;
+		background: #1a1a1a;
+		color: white;
+		text-align: center;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		color: #ccc;
+		margin-bottom: 40px;
+	}
+
+	.cta-section .cta-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	/* Footer */
+	.footer {
+		background: #0f0f0f;
+		color: white;
+		padding: 60px 0 20px;
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 60px;
+		margin-bottom: 40px;
+	}
+
+	.footer-brand {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.footer-logo {
+		width: 60px;
+		height: 60px;
+		border-radius: 12px;
+	}
+
+	.footer-brand p {
+		color: #ccc;
+		font-size: 1.1rem;
+	}
+
+	.footer-links {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
+
+	.footer-column h4 {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin-bottom: 16px;
+		color: white;
+	}
+
+	.footer-column ul {
+		list-style: none;
+	}
+
+	.footer-column ul li {
+		margin-bottom: 8px;
+	}
+
+	.footer-column ul li a {
+		color: #ccc;
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.footer-column ul li a:hover {
+		color: #c3f53c;
+	}
+
+	.footer-bottom {
+		border-top: 1px solid #333;
+		padding-top: 20px;
+		text-align: center;
+		color: #999;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.hero {
+			padding: 100px 0 60px; /* Adjusted padding for mobile */
+		}
+
+		.hero-content {
+			grid-template-columns: 1fr;
+			gap: 40px;
+			text-align: center;
+		}
+
+		.hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.cta-buttons {
+			justify-content: center;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.steps-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.footer-content {
+			grid-template-columns: 1fr;
+			gap: 40px;
+		}
+
+		.footer-links {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
